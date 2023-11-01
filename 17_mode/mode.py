@@ -11,3 +11,8 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+
+    common = {nums.count(n): n for n in nums}
+    return common.get(max(common.keys()))
+
+
