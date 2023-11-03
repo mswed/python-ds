@@ -21,3 +21,8 @@ def two_oldest_ages(ages):
     # you may find it helpful to research the `sorted(iter)` function, which
     # can take *any* type of list-like-thing, and returns a new, sorted list
     # from it.
+
+    no_dups = list(set(ages))
+    no_dups.sort()
+
+    return no_dups[-2], no_dups[-1]
